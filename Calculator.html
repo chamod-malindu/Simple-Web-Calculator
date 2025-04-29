@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.min.js"></script>
+
+  <link rel="Stylesheet" href="style/style.css">
+  <title>Calculator</title>
+  
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="title">
+      Calculator
+    </div>
+    <div class="display">
+      <p class="js-display"></p>
+    </div>
+    <div class="key-pad">
+      <div>
+        <button class="number-key" onclick="updateCalculation('1')"> 1 </button>
+        <button class="number-key" onclick="updateCalculation('2')"> 2 </button>
+        <button class="number-key" onclick="updateCalculation('3')"> 3 </button>
+        <button class="function-key" onclick="updateCalculation('+')"> + </button>
+      </div>
+
+      <div>
+        <button class="number-key" onclick="updateCalculation('4')"> 4 </button>
+        <button class="number-key" onclick="updateCalculation('5')"> 5 </button>
+        <button class="number-key" onclick="updateCalculation('6')"> 6 </button>
+        <button class="function-key" onclick="updateCalculation('-')"> - </button>
+      </div>
+
+      <div>
+        <button class="number-key" onclick="updateCalculation('7')"> 7 </button>
+        <button class="number-key" onclick="updateCalculation('8')"> 8 </button>
+        <button class="number-key" onclick="updateCalculation('9')"> 9 </button>
+        <button class="function-key" onclick="updateCalculation('*')"> * </button>
+      </div>
+
+      <div>
+        <button class="number-key" onclick="updateCalculation('0')"> 0 </button>
+        <button class="function-key" onclick="updateCalculation('.')"> . </button>
+        <button class="function-key" onclick="calculateResult()"> = </button>
+        <button class="function-key" onclick="updateCalculation('/')"> / </button>
+      </div>
+      <div>
+        <div>
+          <button class="function-key clear-button" onclick="clearCalculation()">Clear</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="./script/script.js"></script>
+    
+
+</body>
+</html>
